@@ -1,0 +1,21 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/write_pointer.v}
+vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v}
+vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/read_pointer.v}
+vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/gray_to_bin.v}
+vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v}
+
+vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Design_Files/../Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+
+add wave *
+view structure
+view signals
+run -all

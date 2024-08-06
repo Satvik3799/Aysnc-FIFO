@@ -1,0 +1,152 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do FIFO_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/write_pointer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:41:30 on Aug 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files" F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/write_pointer.v 
+# -- Compiling module write_pointer
+# 
+# Top level modules:
+# 	write_pointer
+# End time: 02:41:30 on Aug 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:41:30 on Aug 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files" F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 02:41:30 on Aug 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/read_pointer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:41:31 on Aug 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files" F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/read_pointer.v 
+# -- Compiling module read_pointer
+# 
+# Top level modules:
+# 	read_pointer
+# End time: 02:41:31 on Aug 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/gray_to_bin.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:41:31 on Aug 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files" F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/gray_to_bin.v 
+# -- Compiling module gray_to_bin
+# -- Compiling module bin_to_gray
+# 
+# Top level modules:
+# 	gray_to_bin
+# 	bin_to_gray
+# End time: 02:41:31 on Aug 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:41:31 on Aug 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files" F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v 
+# -- Compiling module synchronizer
+# 
+# Top level modules:
+# 	synchronizer
+# End time: 02:41:31 on Aug 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Design_Files/../Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:41:31 on Aug 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files" F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 02:41:31 on Aug 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_tb 
+# Start time: 02:41:31 on Aug 07,2024
+# Loading work.top_tb
+# Loading work.FIFO
+# Loading work.read_pointer
+# Loading work.bin_to_gray
+# Loading work.synchronizer
+# Loading work.write_pointer
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(48): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/r_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(48): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack_double_FF'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/r_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(69): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/w_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(69): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack_double_FF'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/w_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time: 0 | w_data: 00 | r_data: xx | full: 0 | empty: 1
+# Time: 5000 | w_data: 00 | r_data: xx | full: x | empty: 1
+# Time: 7000 | w_data: 00 | r_data: xx | full: x | empty: x
+# Time: 15000 | w_data: a1 | r_data: xx | full: x | empty: x
+# Time: 25000 | w_data: b2 | r_data: xx | full: x | empty: x
+# Time: 35000 | w_data: c3 | r_data: xx | full: x | empty: x
+# Time: 45000 | w_data: d4 | r_data: xx | full: x | empty: x
+# ** Note: $stop    : F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v(87)
+#    Time: 1123 ns  Iteration: 0  Instance: /top_tb
+# Break in Module top_tb at F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v line 87
+add wave -position insertpoint  \
+sim:/top_tb/uut/DATA_SIZE \
+sim:/top_tb/uut/ADDR_SIZE \
+sim:/top_tb/uut/w_en \
+sim:/top_tb/uut/w_clk \
+sim:/top_tb/uut/w_rst_n \
+sim:/top_tb/uut/w_data \
+sim:/top_tb/uut/r_en \
+sim:/top_tb/uut/r_clk \
+sim:/top_tb/uut/r_rst_n \
+sim:/top_tb/uut/r_data \
+sim:/top_tb/uut/full \
+sim:/top_tb/uut/empty \
+sim:/top_tb/uut/w_addr \
+sim:/top_tb/uut/r_addr \
+sim:/top_tb/uut/w_ptr \
+sim:/top_tb/uut/r_ptr \
+sim:/top_tb/uut/r_ptr_sync \
+sim:/top_tb/uut/w_ptr_sync \
+sim:/top_tb/uut/mem
+restart 
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(48): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/r_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(48): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack_double_FF'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/r_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(69): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/w_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+# ** Warning: (vsim-3015) F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v(69): [PCDPC] - Port size (1) does not match connection size (5) for port 'ack_double_FF'. The port definition is at: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/uut/w_ptr_sync_inst File: F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+run -all
+# Time: 0 | w_data: 00 | r_data: xx | full: 0 | empty: 1
+# Time: 5000 | w_data: 00 | r_data: xx | full: x | empty: 1
+# Time: 7000 | w_data: 00 | r_data: xx | full: x | empty: x
+# Time: 15000 | w_data: a1 | r_data: xx | full: x | empty: x
+# Time: 25000 | w_data: b2 | r_data: xx | full: x | empty: x
+# Time: 35000 | w_data: c3 | r_data: xx | full: x | empty: x
+# Time: 45000 | w_data: d4 | r_data: xx | full: x | empty: x
+# ** Note: $stop    : F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v(87)
+#    Time: 1123 ns  Iteration: 0  Instance: /top_tb
+# Break in Module top_tb at F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v line 87
+# End time: 02:42:59 on Aug 07,2024, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 8
