@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dF:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/simulation/modelsim
 vbin_to_gray
-Z1 !s110 1722978691
+Z1 !s110 1723023421
 !i10b 1
 !s100 Q5QJ:F<BXDe2EIlH[;B0V1
 IRajSX:E5LPnTd1EIMfRF00
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1722978691.000000
+Z7 !s108 1723023421.000000
 Z8 !s107 F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/gray_to_bin.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files|F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/gray_to_bin.v|
 !i113 1
@@ -31,23 +31,23 @@ Z10 o-vlog01compat -work work
 Z11 !s92 -vlog01compat -work work {+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files}
 Z12 tCvgOpt 0
 vFIFO
-Z13 !s110 1722978690
+R1
 !i10b 1
-!s100 ICAfEa^Pa:0R8kmZWQKBk0
-IKlTlm`Gi<G82g;V^8aA=g1
+!s100 MTTT;;Sc_UGNN_5OoVjoD3
+I5U>j7?d9H9agXGdGEXn5K2
 R2
 R0
-w1722977067
-8F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v
-FF:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v
+w1723017572
+8F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/FIFO.v
+FF:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/FIFO.v
 L0 3
 R6
 r1
 !s85 0
 31
-Z14 !s108 1722978690.000000
-!s107 F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files|F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v|
+R7
+!s107 F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/FIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files|F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/FIFO.v|
 !i113 1
 R10
 R11
@@ -97,24 +97,24 @@ R7
 R10
 R11
 R12
-vsynchronizer
+vtop
 R1
 !i10b 1
-!s100 Pi_ajc04[ch_5O7T7JhHV1
-Idhg^[fGC0KUglfbGl=Rif2
+!s100 bAFcmYIkeT]_Hcz2DECbf1
+IUnkG0fXnW37;NbYP>@jDC2
 R2
 R0
-w1722948724
-8F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
-FF:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v
+w1723023221
+8F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v
+FF:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-!s107 F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files|F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/synchronizer.v|
+!s107 F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files|F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v|
 !i113 1
 R10
 R11
@@ -122,11 +122,11 @@ R12
 vtop_tb
 R1
 !i10b 1
-!s100 8`BVV=jPcTehg4`VBZ;:l3
-Iz6K<4:ASc`WcAmkLoWPzz3
+!s100 _Ni_;a;4`H0SnJ:Tc5i1]1
+Iz^LdPm6>0ZEXOCI17Q4kF0
 R2
 R0
-w1722978476
+w1723023407
 8F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v
 FF:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v
 L0 3
@@ -142,13 +142,13 @@ R10
 !s92 -vlog01compat -work work {+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files}
 R12
 vwrite_pointer
-R13
+R1
 !i10b 1
 !s100 6]4ii=cnYdFS4zzYhX48_0
 I2HiZ?ZHKFgF^?g]=Sl6Rk1
 R2
 R0
-w1722978667
+w1723012771
 8F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/write_pointer.v
 FF:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/write_pointer.v
 L0 1
@@ -156,7 +156,7 @@ R6
 r1
 !s85 0
 31
-R14
+R7
 !s107 F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/write_pointer.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files|F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/write_pointer.v|
 !i113 1

@@ -9,7 +9,6 @@ vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source
 vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/top.v}
 vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/read_pointer.v}
 vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/gray_to_bin.v}
-vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Source_Files/FIFO.v}
 
 vlog -vlog01compat -work work +incdir+F:/M_tech/IITB/Projects/Aysnc\ FIFO/Design_Files/../Source_Files {F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/../Source_Files/top_tb.v}
 

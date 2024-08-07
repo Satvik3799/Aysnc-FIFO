@@ -1,79 +1,73 @@
- //DATA_SIZE and ADDR_SIZE can be used to define memory of the FIFO
+module top #(parameter DATA_SIZE = 8, parameter ADDR_SIZE = 4) (
+    input w_clk, r_clk, w_rst_n, r_rst_n,
+    input w_en, r_en,
+    output [DATA_SIZE-1:0] r_data
+);
 
-module FIFO #(parameter DATA_SIZE = 8 , parameter ADDR_SIZE = 4) 
-(   
-    //Write operations
-	input w_en, w_clk, w_rst_n,     
-    input [DATA_SIZE-1:0] w_data,
+    wire full, empty;
+    wire [DATA_SIZE-1:0] fifo_r_data;
+    reg [DATA_SIZE-1:0] w_data;
+    integer i, j;
     
-    //Read operations
-    input r_en, r_clk, r_rst_n,        
-    output [DATA_SIZE-1:0] r_data,
-	
-    output full,
-	output empty
-	
+    // Instantiate FIFO
+    FIFO #(.DATA_SIZE(DATA_SIZE), .ADDR_SIZE(ADDR_SIZE)) fifo_inst (
+        .w_en(w_en),
+        .w_clk(w_clk),
+        .w_rst_n(w_rst_n),
+        .w_data(w_data),
+        .r_en(r_en),
+        .r_clk(r_clk),
+        .r_rst_n(r_rst_n),
+        .r_data(fifo_r_data),
+        .full(full),
+        .empty(empty)
     );
-	 
-wire [ADDR_SIZE-1:0] w_addr, r_addr;
-wire [ADDR_SIZE:0] w_ptr, r_ptr;
-wire [ADDR_SIZE:0] r_ptr_sync, w_ptr_sync;
 
-//Defining memory
-reg [DATA_SIZE-1:0] mem [0:1<<ADDR_SIZE-1];
+    // RAM for sending data
+    reg [DATA_SIZE-1:0] send_ram [0:DATA_SIZE-1];
+    // RAM for receiving data
+    reg [DATA_SIZE-1:0] recv_ram [0:DATA_SIZE-1];
+    
+    // Initialize sending RAM with some data
+    initial begin
+        
+        for (i = 0; i < (DATA_SIZE); i = i + 1) begin
+            send_ram[i] = i; // Example initialization
+        end
+    end
+    
+    // Initialize receiving RAM with 0s
+    initial begin
+      
+        for (j = 0; j < (DATA_SIZE); j = j + 1) begin
+            recv_ram[j] = 0;
+        end
+    end
+    
+    // Write data to FIFO from sending RAM
+    reg [DATA_SIZE-1:0] write_pointer;
+    always @(posedge w_clk or negedge w_rst_n) begin
+        if (!w_rst_n)
+            write_pointer <= 0;
+        else if (w_en && !full) begin
+            w_data <= send_ram[write_pointer];
+            write_pointer <= write_pointer + 1'b1;
+        end
+    end
 
-//Read operation
-assign r_data = mem[r_addr];
+    // Read data from FIFO to receiving RAM
+    reg [DATA_SIZE-1:0] read_pointer;
+    always @(posedge r_clk or negedge r_rst_n) begin
+        if (!r_rst_n)
+            read_pointer <= 0;
+        else if (r_en && !empty) begin
+            recv_ram[read_pointer] <= fifo_r_data;
+            read_pointer <= read_pointer + 1'b1;
+        end
+    end
 
-//Write operation
-always @(posedge w_clk)
-if (w_en && !full) mem[w_addr] <= w_data;
+    assign r_data = fifo_r_data;
 
-//Read operation will give the Empty flag
-
-
-
-read_pointer #(.ADDR_SIZE(4)) 
-    read_pointer_inst(  
-            
-            .w_ptr(w_ptr_sync),
-	        .r_en(r_en), 
-            .r_clk(r_clk),
-            .r_rst_n(r_rst_n),
-            .empty(empty),
-	        .r_addr(r_addr),
-	        .r_ptr(r_ptr)
-);
-
-synchronizer r_ptr_sync_inst (
-    .clk(r_clk),
-    .rst(r_rst_n),
-    .ack(r_ptr),
-//    .rsp(rsp),
-    .ack_lvl_pulse(),
-    .ack_double_FF(r_ptr_sync)
-);
-
-//Write operation will give the Full flag
-write_pointer #(.ADDR_SIZE(4)) write_pointer_inst
-(
-    .full(full),
-    .w_addr(w_addr),
-    .w_ptr(w_ptr),
-    .r_ptr(r_ptr_sync),
-    .w_en(w_en),
-    .wclk(w_clk),
-    .w_rst_n(w_rst_n)
-);
-
-synchronizer w_ptr_sync_inst (
-    .clk(w_clk),
-    .rst(w_rst_n),
-    .ack(w_ptr),
-//    .rsp(rsp),
-    .ack_lvl_pulse(),
-    .ack_double_FF(w_ptr_sync)
-);
-
+    
 
 endmodule
