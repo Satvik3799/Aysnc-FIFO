@@ -1,132 +1,24 @@
-## Generated SDC file "FIFO.out.sdc"
+# Create clock constraints for write clock domain
+create_clock -name w_clk -period 10.0 [get_ports w_clk]
+# w_clk is 100 MHz
 
-## Copyright (C) 2018  Intel Corporation. All rights reserved.
-## Your use of Intel Corporation's design tools, logic functions 
-## and other software and tools, and its AMPP partner logic 
-## functions, and any output files from any of the foregoing 
-## (including device programming or simulation files), and any 
-## associated documentation or information are expressly subject 
-## to the terms and conditions of the Intel Program License 
-## Subscription Agreement, the Intel Quartus Prime License Agreement,
-## the Intel FPGA IP License Agreement, or other applicable license
-## agreement, including, without limitation, that your use is for
-## the sole purpose of programming logic devices manufactured by
-## Intel and sold by Intel or its authorized distributors.  Please
-## refer to the applicable agreement for further details.
+# Create clock constraints for read clock domain
+create_clock -name r_clk -period 20.0 [get_ports r_clk]
+# r_clk is 50 MHz
 
+# Define input delays
+#set_input_delay -clock w_clk -max 2.0 [get_ports w_en]
+#set_input_delay -clock r_clk -max 2.0 [get_ports r_en]
 
-## VENDOR  "Altera"
-## PROGRAM "Quartus Prime"
-## VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+# Define output delays
+#set_output_delay -clock w_clk -max 2.0 [get_ports full]
+#set_output_delay -clock r_clk -max 2.0 [get_ports empty]
+#set_output_delay -clock r_clk -max 2.0 [get_ports r_data]
 
-## DATE    "Wed Aug 07 15:10:44 2024"
+# Define false paths between different clock domains
+set_false_path -from [get_clocks w_clk] -to [get_clocks r_clk]
+set_false_path -from [get_clocks r_clk] -to [get_clocks w_clk]
 
-##
-## DEVICE  "5CGXFC7C7F23C8"
-##
-
-
-#**************************************************************
-# Time Information
-#**************************************************************
-
-set_time_format -unit ns -decimal_places 3
-
-
-
-#**************************************************************
-# Create Clock
-#**************************************************************
-
-create_clock -name {r_clk} -period 10.000 -waveform { 0.000 0.500 } [get_ports {r_clk}]
-create_clock -name {w_clk} -period 5.000 -waveform { 0.000 0.500 } [get_ports {w_clk}]
-
-
-#**************************************************************
-# Create Generated Clock
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Clock Latency
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Clock Uncertainty
-#**************************************************************
-
-set_clock_uncertainty -rise_from [get_clocks {w_clk}] -rise_to [get_clocks {w_clk}] -setup 0.100  
-set_clock_uncertainty -rise_from [get_clocks {w_clk}] -rise_to [get_clocks {w_clk}] -hold 0.060  
-set_clock_uncertainty -rise_from [get_clocks {w_clk}] -fall_to [get_clocks {w_clk}] -setup 0.100  
-set_clock_uncertainty -rise_from [get_clocks {w_clk}] -fall_to [get_clocks {w_clk}] -hold 0.060  
-set_clock_uncertainty -rise_from [get_clocks {w_clk}] -rise_to [get_clocks {r_clk}]  0.100  
-set_clock_uncertainty -rise_from [get_clocks {w_clk}] -fall_to [get_clocks {r_clk}]  0.100  
-set_clock_uncertainty -fall_from [get_clocks {w_clk}] -rise_to [get_clocks {w_clk}] -setup 0.100  
-set_clock_uncertainty -fall_from [get_clocks {w_clk}] -rise_to [get_clocks {w_clk}] -hold 0.060  
-set_clock_uncertainty -fall_from [get_clocks {w_clk}] -fall_to [get_clocks {w_clk}] -setup 0.100  
-set_clock_uncertainty -fall_from [get_clocks {w_clk}] -fall_to [get_clocks {w_clk}] -hold 0.060  
-set_clock_uncertainty -fall_from [get_clocks {w_clk}] -rise_to [get_clocks {r_clk}]  0.100  
-set_clock_uncertainty -fall_from [get_clocks {w_clk}] -fall_to [get_clocks {r_clk}]  0.100  
-set_clock_uncertainty -rise_from [get_clocks {r_clk}] -rise_to [get_clocks {w_clk}]  0.100  
-set_clock_uncertainty -rise_from [get_clocks {r_clk}] -fall_to [get_clocks {w_clk}]  0.100  
-set_clock_uncertainty -rise_from [get_clocks {r_clk}] -rise_to [get_clocks {r_clk}] -setup 0.100  
-set_clock_uncertainty -rise_from [get_clocks {r_clk}] -rise_to [get_clocks {r_clk}] -hold 0.060  
-set_clock_uncertainty -rise_from [get_clocks {r_clk}] -fall_to [get_clocks {r_clk}] -setup 0.100  
-set_clock_uncertainty -rise_from [get_clocks {r_clk}] -fall_to [get_clocks {r_clk}] -hold 0.060  
-set_clock_uncertainty -fall_from [get_clocks {r_clk}] -rise_to [get_clocks {w_clk}]  0.100  
-set_clock_uncertainty -fall_from [get_clocks {r_clk}] -fall_to [get_clocks {w_clk}]  0.100  
-set_clock_uncertainty -fall_from [get_clocks {r_clk}] -rise_to [get_clocks {r_clk}] -setup 0.100  
-set_clock_uncertainty -fall_from [get_clocks {r_clk}] -rise_to [get_clocks {r_clk}] -hold 0.060  
-set_clock_uncertainty -fall_from [get_clocks {r_clk}] -fall_to [get_clocks {r_clk}] -setup 0.100  
-set_clock_uncertainty -fall_from [get_clocks {r_clk}] -fall_to [get_clocks {r_clk}] -hold 0.060  
-
-
-#**************************************************************
-# Set Input Delay
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Output Delay
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Clock Groups
-#**************************************************************
-
-
-
-#**************************************************************
-# Set False Path
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Multicycle Path
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Maximum Delay
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Minimum Delay
-#**************************************************************
-
-
-
-#**************************************************************
-# Set Input Transition
-#**************************************************************
-
+# Set timing exceptions if needed (e.g., multicycle paths)
+#set_multicycle_path -setup 2 -from [get_clocks w_clk] -to [get_clocks r_clk]
+#set_multicycle_path -hold 1 -from [get_clocks w_clk] -to [get_clocks r_clk]

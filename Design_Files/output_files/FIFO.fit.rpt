@@ -1,5 +1,5 @@
 Fitter report for FIFO
-Wed Aug 07 15:08:45 2024
+Wed Aug 07 15:24:10 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Aug 07 15:08:45 2024       ;
+; Fitter Status                   ; Successful - Wed Aug 07 15:24:10 2024       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; FIFO                                        ;
 ; Top-level Entity Name           ; top                                         ;
@@ -159,12 +159,11 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
-;     Processor 5            ;   0.2%      ;
-;     Processor 6            ;   0.2%      ;
-;     Processor 7            ;   0.2%      ;
-;     Processor 8            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processors 7-8         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -226,12 +225,12 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 23 / 56,480        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 23                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 30 / 56,480        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 16                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 5                  ;       ;
-;         [c] ALMs used for registers                         ; 9                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 31 / 56,480        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 15                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 6                  ;       ;
+;         [c] ALMs used for registers                         ; 10                 ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 7 / 56,480         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 56,480         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 56,480         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -240,8 +239,8 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 6 / 5,648          ; < 1 % ;
-;     -- Logic LABs                                           ; 6                  ;       ;
+; Total LABs:  partially or completely used                   ; 5 / 5,648          ; < 1 % ;
+;     -- Logic LABs                                           ; 5                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 40                 ;       ;
@@ -250,12 +249,12 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ;     -- 5 input functions                                    ; 6                  ;       ;
 ;     -- 4 input functions                                    ; 10                 ;       ;
 ;     -- <=3 input functions                                  ; 17                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 2                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 6                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 50                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 50 / 112,960       ; < 1 % ;
-;         -- Secondary logic registers                        ; 0 / 112,960        ; 0 %   ;
+;         -- Primary logic registers                          ; 49 / 112,960       ; < 1 % ;
+;         -- Secondary logic registers                        ; 1 / 112,960        ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 50                 ;       ;
 ;         -- Routing optimization registers                   ; 0                  ;       ;
@@ -293,11 +292,11 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.7% / 0.8% / 0.3% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.5% / 0.5% / 0.4% ;       ;
 ; Maximum fan-out                                             ; 30                 ;       ;
 ; Highest non-global fan-out                                  ; 24                 ;       ;
-; Total fan-out                                               ; 341                ;       ;
-; Average fan-out                                             ; 2.77               ;       ;
+; Total fan-out                                               ; 345                ;       ;
+; Average fan-out                                             ; 2.72               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -308,12 +307,12 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 23 / 56480 ( < 1 % )  ; 0 / 56480 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 23                    ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 30 / 56480 ( < 1 % )  ; 0 / 56480 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 16                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 5                     ; 0                              ;
-;         [c] ALMs used for registers                         ; 9                     ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 31 / 56480 ( < 1 % )  ; 0 / 56480 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 15                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 6                     ; 0                              ;
+;         [c] ALMs used for registers                         ; 10                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 7 / 56480 ( < 1 % )   ; 0 / 56480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 56480 ( < 1 % )   ; 0 / 56480 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 56480 ( 0 % )     ; 0 / 56480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
@@ -322,8 +321,8 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 6 / 5648 ( < 1 % )    ; 0 / 5648 ( 0 % )               ;
-;     -- Logic LABs                                           ; 6                     ; 0                              ;
+; Total LABs:  partially or completely used                   ; 5 / 5648 ( < 1 % )    ; 0 / 5648 ( 0 % )               ;
+;     -- Logic LABs                                           ; 5                     ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Combinational ALUT usage for logic                          ; 40                    ; 0                              ;
@@ -332,15 +331,15 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ;     -- 5 input functions                                    ; 6                     ; 0                              ;
 ;     -- 4 input functions                                    ; 10                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 17                    ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 2                     ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 6                     ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 50 / 112960 ( < 1 % ) ; 0 / 112960 ( 0 % )             ;
-;         -- Secondary logic registers                        ; 0 / 112960 ( 0 % )    ; 0 / 112960 ( 0 % )             ;
+;         -- Primary logic registers                          ; 49 / 112960 ( < 1 % ) ; 0 / 112960 ( 0 % )             ;
+;         -- Secondary logic registers                        ; 1 / 112960 ( < 1 % )  ; 0 / 112960 ( 0 % )             ;
 ;     -- By function:                                         ;                       ;                                ;
 ;         -- Design implementation registers                  ; 50                    ; 0                              ;
 ;         -- Routing optimization registers                   ; 0                     ; 0                              ;
@@ -361,7 +360,7 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 345                   ; 0                              ;
+;     -- Total Connections                                    ; 349                   ; 0                              ;
 ;     -- Registered Connections                               ; 135                   ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
@@ -395,11 +394,11 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; r_clk   ; N16   ; 5B       ; 89           ; 35           ; 43           ; 22                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; r_en    ; P19   ; 5A       ; 89           ; 9            ; 37           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; r_rst_n ; R22   ; 5A       ; 89           ; 6            ; 54           ; 21                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; r_en    ; Y22   ; 4A       ; 66           ; 0            ; 91           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; r_rst_n ; W22   ; 4A       ; 66           ; 0            ; 74           ; 21                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; w_clk   ; M16   ; 5B       ; 89           ; 35           ; 60           ; 30                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; w_en    ; R17   ; 5A       ; 89           ; 8            ; 20           ; 11                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; w_rst_n ; R16   ; 5A       ; 89           ; 8            ; 3            ; 24                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; w_en    ; U22   ; 4A       ; 70           ; 0            ; 51           ; 11                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; w_rst_n ; V21   ; 4A       ; 70           ; 0            ; 34           ; 24                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -408,14 +407,14 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 +-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; r_data[0] ; T15   ; 5A       ; 89           ; 6            ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; r_data[1] ; R21   ; 5A       ; 89           ; 8            ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; r_data[2] ; P22   ; 5A       ; 89           ; 8            ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; r_data[3] ; P16   ; 5A       ; 89           ; 9            ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; r_data[4] ; T22   ; 5A       ; 89           ; 6            ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; r_data[5] ; P18   ; 5A       ; 89           ; 9            ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; r_data[6] ; R15   ; 5A       ; 89           ; 6            ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; r_data[7] ; P17   ; 5A       ; 89           ; 9            ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[0] ; W21   ; 4A       ; 68           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[1] ; Y19   ; 4A       ; 66           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[2] ; R14   ; 4A       ; 68           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[3] ; Y20   ; 4A       ; 66           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[4] ; V18   ; 4A       ; 70           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[5] ; Y21   ; 4A       ; 68           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[6] ; V19   ; 4A       ; 70           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; r_data[7] ; P14   ; 4A       ; 68           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -429,8 +428,8 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; B0L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
 ; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 3B       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 12 / 16 ( 75 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 12 / 48 ( 25 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 2 / 16 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 7A       ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 8A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -785,15 +784,15 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; P11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P12      ; 123        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P13      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; P14      ; 168        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; P14      ; 168        ; 4A       ; r_data[7]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; P15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; P16      ; 225        ; 5A       ; r_data[3]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; P17      ; 227        ; 5A       ; r_data[7]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; P18      ; 226        ; 5A       ; r_data[5]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; P19      ; 224        ; 5A       ; r_en                            ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; P16      ; 225        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; P17      ; 227        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; P18      ; 226        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; P19      ; 224        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P20      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; P21      ;            ; 5A       ; VCCPD5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; P22      ; 222        ; 5A       ; r_data[2]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; P22      ; 222        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R1       ; 31         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R2       ; 30         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -807,15 +806,15 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; R11      ; 127        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R12      ; 121        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; R14      ; 170        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; R15      ; 219        ; 5A       ; r_data[6]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; R16      ; 221        ; 5A       ; w_rst_n                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; R17      ; 223        ; 5A       ; w_en                            ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; R14      ; 170        ; 4A       ; r_data[2]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R15      ; 219        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; R16      ; 221        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; R17      ; 223        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R18      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; R19      ;            ; --       ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
 ; R20      ;            ; 5A       ; VREFB5AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; R21      ; 220        ; 5A       ; r_data[1]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; R22      ; 218        ; 5A       ; r_rst_n                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; R21      ; 220        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; R22      ; 218        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T3       ;            ; --       ; VCCH_GXBL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -830,14 +829,14 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; T12      ; 136        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T13      ; 138        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T14      ; 152        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; T15      ; 217        ; 5A       ; r_data[0]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; T15      ; 217        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T17      ; 215        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T18      ; 213        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T19      ; 212        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T20      ; 214        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; T22      ; 216        ; 5A       ; r_data[4]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; T22      ; 216        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; U1       ; 32         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U2       ; 33         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -859,7 +858,7 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; U19      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U20      ; 179        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U21      ; 177        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U22      ; 172        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; U22      ; 172        ; 4A       ; w_en                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V3       ; 50         ; 3A       ; ^DCLK                           ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -877,10 +876,10 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; V15      ; 146        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V16      ; 160        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V18      ; 175        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; V19      ; 173        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; V18      ; 175        ; 4A       ; r_data[4]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V19      ; 173        ; 4A       ; r_data[6]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V20      ; 157        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; V21      ; 174        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; V21      ; 174        ; 4A       ; w_rst_n                         ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W1       ; 35         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W2       ; 34         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -902,8 +901,8 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; W18      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W19      ; 159        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; W20      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W21      ; 171        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; W22      ; 166        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; W21      ; 171        ; 4A       ; r_data[0]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W22      ; 166        ; 4A       ; r_rst_n                         ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; Y1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y3       ; 36         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -922,10 +921,10 @@ The pin-out file can be found in F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files
 ; Y16      ; 149        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y17      ; 151        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y18      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; Y19      ; 167        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; Y20      ; 165        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; Y21      ; 169        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; Y22      ; 164        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y19      ; 167        ; 4A       ; r_data[1]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y20      ; 165        ; 4A       ; r_data[3]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y21      ; 169        ; 4A       ; r_data[5]                       ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y22      ; 164        ; 4A       ; r_en                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 +----------+------------+----------+---------------------------------+--------+--------------+---------------------+--------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -971,14 +970,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name     ; Library Name ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
-; |top                                      ; 23.0 (2.5)           ; 30.0 (3.5)                       ; 7.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 40 (5)              ; 50 (6)                    ; 0 (0)         ; 72                ; 1     ; 0          ; 14   ; 0            ; |top                                                                      ; top             ; work         ;
-;    |FIFO:fifo_inst|                       ; 20.5 (7.0)           ; 26.5 (11.8)                      ; 6.0 (4.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 35 (11)             ; 44 (24)                   ; 0 (0)         ; 72                ; 1     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst                                                       ; FIFO            ; work         ;
+; |top                                      ; 23.0 (2.5)           ; 30.5 (4.0)                       ; 7.5 (1.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 40 (5)              ; 50 (6)                    ; 0 (0)         ; 72                ; 1     ; 0          ; 14   ; 0            ; |top                                                                      ; top             ; work         ;
+;    |FIFO:fifo_inst|                       ; 20.5 (6.5)           ; 26.5 (12.1)                      ; 6.0 (5.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 35 (11)             ; 44 (24)                   ; 0 (0)         ; 72                ; 1     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst                                                       ; FIFO            ; work         ;
 ;       |altsyncram:mem_rtl_0|              ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 72                ; 1     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|altsyncram:mem_rtl_0                                  ; altsyncram      ; work         ;
 ;          |altsyncram_g0j1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 72                ; 1     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|altsyncram:mem_rtl_0|altsyncram_g0j1:auto_generated   ; altsyncram_g0j1 ; work         ;
-;       |read_pointer:read_pointer_inst|    ; 6.7 (5.4)            ; 7.2 (5.8)                        ; 0.5 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 12 (8)              ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|read_pointer:read_pointer_inst                        ; read_pointer    ; work         ;
-;          |bin_to_gray:bin2gray|           ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|read_pointer:read_pointer_inst|bin_to_gray:bin2gray   ; bin_to_gray     ; work         ;
-;       |write_pointer:write_pointer_inst|  ; 6.8 (5.5)            ; 7.5 (5.9)                        ; 0.7 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 12 (8)              ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|write_pointer:write_pointer_inst                      ; write_pointer   ; work         ;
-;          |bin_to_gray:bin2gray|           ; 1.3 (1.3)            ; 1.6 (1.6)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray ; bin_to_gray     ; work         ;
+;       |read_pointer:read_pointer_inst|    ; 7.3 (5.8)            ; 7.6 (6.3)                        ; 0.3 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 12 (8)              ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|read_pointer:read_pointer_inst                        ; read_pointer    ; work         ;
+;          |bin_to_gray:bin2gray|           ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|read_pointer:read_pointer_inst|bin_to_gray:bin2gray   ; bin_to_gray     ; work         ;
+;       |write_pointer:write_pointer_inst|  ; 6.8 (5.2)            ; 6.8 (5.2)                        ; 0.1 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 12 (8)              ; 10 (10)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|write_pointer:write_pointer_inst                      ; write_pointer   ; work         ;
+;          |bin_to_gray:bin2gray|           ; 1.3 (1.3)            ; 1.6 (1.6)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |top|FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray ; bin_to_gray     ; work         ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -998,7 +997,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; r_data[7] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; r_clk     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; r_rst_n   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; w_en      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; w_en      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; w_clk     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; r_en      ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; w_rst_n   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1034,17 +1033,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - FIFO:fifo_inst|read_pointer:read_pointer_inst|r_ptr[1]                       ; 1                 ; 0       ;
 ;      - FIFO:fifo_inst|read_pointer:read_pointer_inst|r_ptr[2]                       ; 1                 ; 0       ;
 ; w_en                                                                                ;                   ;         ;
-;      - FIFO:fifo_inst|always0~0                                                     ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|mem~17                                                        ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~0                       ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~1                       ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray|gray[0] ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray|gray[1] ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray|gray[2] ; 0                 ; 0       ;
-;      - w_data[0]~0                                                                  ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~3                       ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~4                       ; 0                 ; 0       ;
-;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~5                       ; 0                 ; 0       ;
+;      - FIFO:fifo_inst|always0~0                                                     ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|mem~17                                                        ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~0                       ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~1                       ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray|gray[0] ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray|gray[1] ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|bin_to_gray:bin2gray|gray[2] ; 1                 ; 0       ;
+;      - w_data[0]~0                                                                  ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~3                       ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~4                       ; 1                 ; 0       ;
+;      - FIFO:fifo_inst|write_pointer:write_pointer_inst|Add0~5                       ; 1                 ; 0       ;
 ; w_clk                                                                               ;                   ;         ;
 ; r_en                                                                                ;                   ;         ;
 ;      - FIFO:fifo_inst|read_pointer:read_pointer_inst|Add0~0                         ; 1                 ; 0       ;
@@ -1088,13 +1087,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                     ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; FIFO:fifo_inst|always0~0 ; LABCELL_X77_Y8_N27 ; 4       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; FIFO:fifo_inst|mem~17    ; LABCELL_X79_Y8_N48 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; FIFO:fifo_inst|always0~0 ; LABCELL_X70_Y4_N3  ; 4       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; FIFO:fifo_inst|mem~17    ; LABCELL_X68_Y4_N18 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; r_clk                    ; PIN_N16            ; 22      ; Clock                      ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; r_rst_n                  ; PIN_R22            ; 21      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; r_rst_n                  ; PIN_W22            ; 21      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
 ; w_clk                    ; PIN_M16            ; 30      ; Clock                      ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; w_data[0]~0              ; LABCELL_X79_Y8_N57 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; w_rst_n                  ; PIN_R16            ; 24      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; w_data[0]~0              ; LABCELL_X70_Y4_N27 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; w_rst_n                  ; PIN_V21            ; 24      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
 +--------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1113,7 +1112,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------+----------------+----------------------+-----------------+-----------------+----------+------------------------+-------------------------------------------+
 ; Name                                                                          ; Type ; Mode             ; Clock Mode  ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF  ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs                             ;
 +-------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------+----------------+----------------------+-----------------+-----------------+----------+------------------------+-------------------------------------------+
-; FIFO:fifo_inst|altsyncram:mem_rtl_0|altsyncram_g0j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 9            ; 8            ; 9            ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 72   ; 9                           ; 8                           ; 9                           ; 8                           ; 72                  ; 1           ; 0     ; None ; M10K_X76_Y9_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Read Address Using Clock 1 on Port B ;
+; FIFO:fifo_inst|altsyncram:mem_rtl_0|altsyncram_g0j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 9            ; 8            ; 9            ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 72   ; 9                           ; 8                           ; 9                           ; 8                           ; 72                  ; 1           ; 0     ; None ; M10K_X69_Y4_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Read Address Using Clock 1 on Port B ;
 +-------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------+----------------+----------------------+-----------------+-----------------+----------+------------------------+-------------------------------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1123,23 +1122,23 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 96 / 374,484 ( < 1 % ) ;
+; Block interconnects          ; 89 / 374,484 ( < 1 % ) ;
 ; C12 interconnects            ; 0 / 16,664 ( 0 % )     ;
-; C2 interconnects             ; 24 / 155,012 ( < 1 % ) ;
-; C4 interconnects             ; 7 / 72,600 ( < 1 % )   ;
+; C2 interconnects             ; 12 / 155,012 ( < 1 % ) ;
+; C4 interconnects             ; 12 / 72,600 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 30 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 30 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 30 ( 0 % )         ;
 ; Direct links                 ; 13 / 374,484 ( < 1 % ) ;
 ; Global clocks                ; 2 / 16 ( 13 % )        ;
 ; Horizontal periphery clocks  ; 0 / 72 ( 0 % )         ;
-; Local interconnects          ; 34 / 112,960 ( < 1 % ) ;
+; Local interconnects          ; 31 / 112,960 ( < 1 % ) ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 3 / 15,868 ( < 1 % )   ;
-; R14/C12 interconnect drivers ; 2 / 27,256 ( < 1 % )   ;
-; R3 interconnects             ; 39 / 169,296 ( < 1 % ) ;
-; R6 interconnects             ; 64 / 330,800 ( < 1 % ) ;
-; Spine clocks                 ; 2 / 480 ( < 1 % )      ;
+; R14 interconnects            ; 1 / 15,868 ( < 1 % )   ;
+; R14/C12 interconnect drivers ; 1 / 27,256 ( < 1 % )   ;
+; R3 interconnects             ; 35 / 169,296 ( < 1 % ) ;
+; R6 interconnects             ; 29 / 330,800 ( < 1 % ) ;
+; Spine clocks                 ; 3 / 480 ( < 1 % )      ;
 ; Wire stub REs                ; 0 / 20,834 ( 0 % )     ;
 +------------------------------+------------------------+
 
@@ -1268,46 +1267,45 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; w_clk           ; w_clk                ; 4.3               ;
-; w_clk           ; r_clk                ; 3.3               ;
-; r_clk           ; r_clk                ; 2.6               ;
-; r_clk           ; w_clk                ; 1.9               ;
+; w_clk           ; w_clk                ; 11.5              ;
+; r_clk           ; r_clk                ; 6.7               ;
+; r_clk,I/O       ; r_clk                ; 1.0               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                         ;
-+--------------------------------------------------------+----------------------------------------------------------+-------------------+
-; Source Register                                        ; Destination Register                                     ; Delay Added in ns ;
-+--------------------------------------------------------+----------------------------------------------------------+-------------------+
-; FIFO:fifo_inst|w_ptr_sync[4]                           ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 1.036             ;
-; FIFO:fifo_inst|w_ptr_sync[3]                           ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.999             ;
-; FIFO:fifo_inst|w_ptr_sync[1]                           ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.904             ;
-; FIFO:fifo_inst|w_ptr_sync[0]                           ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.897             ;
-; FIFO:fifo_inst|w_ptr_sync[2]                           ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.771             ;
-; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[1] ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.713             ;
-; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[0] ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.701             ;
-; FIFO:fifo_inst|write_pointer:write_pointer_inst|full   ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.663             ;
-; FIFO:fifo_inst|r_ptr_sync[4]                           ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.639             ;
-; FIFO:fifo_inst|r_ptr_sync[3]                           ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.628             ;
-; FIFO:fifo_inst|r_ptr_sync[1]                           ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.534             ;
-; FIFO:fifo_inst|r_ptr_sync[0]                           ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.532             ;
-; r_en                                                   ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.452             ;
-; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty    ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.452             ;
-; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[0]  ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.452             ;
-; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[1]  ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.452             ;
-; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[2]  ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.452             ;
-; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[3]  ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.452             ;
-; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[2] ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.443             ;
-; FIFO:fifo_inst|r_ptr_sync[2]                           ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.413             ;
-; FIFO:fifo_inst|read_pointer:read_pointer_inst|r_ptr[4] ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; 0.387             ;
-; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[4] ; FIFO:fifo_inst|write_pointer:write_pointer_inst|w_ptr[3] ; 0.370             ;
-; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[3] ; FIFO:fifo_inst|write_pointer:write_pointer_inst|w_ptr[3] ; 0.358             ;
-; w_en                                                   ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; 0.267             ;
-; FIFO:fifo_inst|r_ptr_1[0]                              ; FIFO:fifo_inst|r_ptr_sync[0]                             ; 0.105             ;
-+--------------------------------------------------------+----------------------------------------------------------+-------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                    ;
++----------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                          ; Destination Register                                                                              ; Delay Added in ns ;
++----------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------+
+; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[2]    ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty                                               ; 0.634             ;
+; r_en                                                     ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty                                               ; 0.562             ;
+; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty      ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty                                               ; 0.562             ;
+; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[0]    ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty                                               ; 0.562             ;
+; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[1]    ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty                                               ; 0.562             ;
+; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[2]   ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full                                              ; 0.482             ;
+; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[0]   ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full                                              ; 0.468             ;
+; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[1]   ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full                                              ; 0.466             ;
+; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[3]   ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full                                              ; 0.432             ;
+; w_data[2]                                                ; FIFO:fifo_inst|altsyncram:mem_rtl_0|altsyncram_g0j1:auto_generated|ram_block1a2~porta_datain_reg0 ; 0.419             ;
+; w_data[1]                                                ; FIFO:fifo_inst|altsyncram:mem_rtl_0|altsyncram_g0j1:auto_generated|ram_block1a1~porta_datain_reg0 ; 0.416             ;
+; w_data[0]                                                ; FIFO:fifo_inst|altsyncram:mem_rtl_0|altsyncram_g0j1:auto_generated|ram_block1a0~porta_datain_reg0 ; 0.416             ;
+; FIFO:fifo_inst|read_pointer:read_pointer_inst|r_ptr[4]   ; FIFO:fifo_inst|read_pointer:read_pointer_inst|r_ptr[3]                                            ; 0.391             ;
+; FIFO:fifo_inst|write_pointer:write_pointer_inst|full     ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full                                              ; 0.390             ;
+; FIFO:fifo_inst|write_pointer:write_pointer_inst|bin[4]   ; FIFO:fifo_inst|write_pointer:write_pointer_inst|w_ptr[3]                                          ; 0.353             ;
+; w_en                                                     ; FIFO:fifo_inst|write_pointer:write_pointer_inst|full                                              ; 0.276             ;
+; FIFO:fifo_inst|read_pointer:read_pointer_inst|rbin[3]    ; FIFO:fifo_inst|read_pointer:read_pointer_inst|empty                                               ; 0.162             ;
+; FIFO:fifo_inst|r_ptr_1[2]                                ; FIFO:fifo_inst|r_ptr_sync[2]                                                                      ; 0.136             ;
+; FIFO:fifo_inst|read_pointer:read_pointer_inst|r_ptr[2]   ; FIFO:fifo_inst|r_ptr_1[2]                                                                         ; 0.112             ;
+; write_pointer[1]                                         ; w_data[1]                                                                                         ; 0.091             ;
+; write_pointer[0]                                         ; w_data[0]                                                                                         ; 0.091             ;
+; FIFO:fifo_inst|w_ptr_1[4]                                ; FIFO:fifo_inst|w_ptr_sync[4]                                                                      ; 0.091             ;
+; FIFO:fifo_inst|w_ptr_1[1]                                ; FIFO:fifo_inst|w_ptr_sync[1]                                                                      ; 0.091             ;
+; FIFO:fifo_inst|write_pointer:write_pointer_inst|w_ptr[0] ; FIFO:fifo_inst|w_ptr_1[0]                                                                         ; 0.082             ;
+; write_pointer[2]                                         ; w_data[2]                                                                                         ; 0.076             ;
++----------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------+
 Note: This table only shows the top 25 path(s) that have the largest delay added for hold.
 
 
@@ -1332,36 +1330,41 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'FIFO.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Info (332144): No user constrained base clocks found in the design
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
+Info (332104): Reading SDC File: 'FIFO.sdc'
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 2 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000        r_clk
+    Info (332111):   10.000        w_clk
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:06
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X67_Y0 to location X77_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.28 seconds.
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Info (144001): Generated suppressed messages file F:/M_tech/IITB/Projects/Aysnc FIFO/Design_Files/output_files/FIFO.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 7166 megabytes
-    Info: Processing ended: Wed Aug 07 15:08:45 2024
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:00:42
+Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 7130 megabytes
+    Info: Processing ended: Wed Aug 07 15:24:10 2024
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:39
 
 
 +----------------------------+
